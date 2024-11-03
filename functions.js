@@ -35,12 +35,10 @@ console.log(isOdd(10));
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  let count = 0; // Initialize a counter for odd numbers
-  for (let i = 1; i < n; i += 2) { // Iterate through odd numbers less than n
-    count++;
+  if  (n ===0) return 0
+  return Math.ceil((n - 1) / 2);
 }
-return count;
-}
+
 console.log(oddsSmallerThan(7));   
 console.log(oddsSmallerThan(15));
 
